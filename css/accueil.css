@@ -1,0 +1,158 @@
+.intro {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.intro__background { /* Ajoute une vidéo en tant que fond d'écran */
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.intro__paragraphe { /* Ajoute l'effet "Glassmorphism" à l'arrière du texte pour une meilleure visibilité */
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    line-height: 1.4rem;
+}
+
+.intro__paragraphe h1 {
+    padding-bottom: 1rem;
+}
+
+.intro__paragraphe a {
+    color: var(--ghibli-bleu);
+}
+
+.intro__paragraphe a:hover {
+    color: var(--ghibli-vert);
+}
+
+/***** Bannières des films *****/
+.films__banniere::before { /* Ajoute avant chaque bannière de film une image style papier déchiré, utilisée en tant que séparateur */
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(../ressources/images/accueil/bordure.png);
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.films__banniere {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    border-top: solid 30px transparent;
+    padding: 5rem 10rem;
+    background-color: var(--ghibli-noir);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.films__banniere:nth-child(odd) { /* Positionne et stylise les éléments PAIRES afin de les positioner à DROITE de leur bannière */
+    justify-content: end;
+    background-position: center left;
+    background-image: linear-gradient(to right, transparent, var(--ghibli-noir)), var(--films__bg-image); /* Appelle la variable que l'on définie après */
+}
+
+.films__banniere:nth-child(odd) .films__synopsis { /* Change l'ordre visuel des paragraphes des bannières paires, ce qui les font passer à gauche de l'affiche */
+    order: -1;
+}
+
+.films__banniere:nth-child(even) { /* Positionne et stylise les éléments IMPAIRES afin de les positioner à GAUCHE de leur bannière */
+    justify-content: start;
+    background-position: center right;
+    background-image: linear-gradient(to left, transparent, var(--ghibli-noir)), var(--films__bg-image);
+}
+
+.films__banniere:last-child::after { /* Ajoute après la dernière bannière de film une image style papier déchiré, utilisée en tant que séparateur */
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(../ressources/images/accueil/bordure.png);
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Bannières individuelles */
+.films__banniere--totoro {
+    --films__bg-image: url("../ressources/images/accueil/bg-totoro.png");
+}
+
+.films__banniere--lucioles {
+    --films__bg-image: url("../ressources/images/accueil/bg-lucioles.jpg");
+}
+
+.films__banniere--mononoke {
+    --films__bg-image: url("../ressources/images/accueil/bg-mononoke.jpg");
+}
+
+.films__banniere--chihiro {
+    --films__bg-image: url("../ressources/images/accueil/bg-chihiro.jpg");
+}
+
+.films__lien {
+    display: inline-block;
+    transition: border ease-out .5s, transform ease .5s;
+    height: 100%;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: var(--ghibli-creme);
+}
+
+.films__lien:hover {
+    transform: translateY(-15px);
+}
+
+.films__banniere--totoro .films__lien:hover {
+    border-color: var(--couleur-totoro);
+}
+
+.films__banniere--lucioles .films__lien:hover {
+    border-color: var(--couleur-lucioles);
+}
+
+.films__banniere--mononoke .films__lien:hover {
+    border-color: var(--couleur-mononoke);
+}
+
+.films__banniere--chihiro .films__lien:hover {
+    border-color: var(--couleur-chihiro);
+}
+
+.films__affiche {
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.films__synopsis {
+    padding-inline: 4rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+footer {
+    border-top: solid 30px transparent;
+    padding-top: 5rem;
+}

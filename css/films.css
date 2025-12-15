@@ -1,0 +1,98 @@
+/***** Style global pour les 4 pages de film *****/
+.ghibli__intro {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+    align-content: end;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+    padding: 5rem;
+    background-image: linear-gradient(to bottom, transparent 50%, var(--bg-color-ghibli)), var(--bg-img-ghibli);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ghibli__affiche {
+    width: 20rem;
+}
+
+.ghibli__infos {
+    display: grid;
+    gap: 3rem;
+}
+
+.ghibli__lien {
+    color: var(--ghibli-bleu);
+}
+
+.ghibli__lien:hover {
+    color: var(--ghibli-vert);
+}
+
+.ghibli__galerie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 5rem 15rem;
+}
+
+.ghibli__galerie a {
+    display: grid;
+    width: 20rem;
+}
+
+.ghibli__galerie img {
+    width: 100%;
+}
+
+/**************************************************/
+/***** Style pour la page 'Mon Voisin Totoro' *****/
+/**************************************************/
+.totoro__main {
+    background-color: var(--couleur-totoro);
+}
+
+.totoro__intro {
+    --bg-img-ghibli: url(../ressources/images/totoro/bg-totoro.jpg);
+    --bg-color-ghibli: var(--couleur-totoro);
+}
+
+
+/********************************************************/
+/***** Style pour la page 'Le Tombeau des Lucioles' *****/
+/********************************************************/
+.lucioles__main {
+    background-color: var(--couleur-lucioles);
+}
+
+.lucioles__intro {
+    --bg-img-ghibli: url(../ressources/images/lucioles/bg-lucioles.jpg);
+    --bg-color-ghibli: var(--couleur-lucioles);
+}
+
+
+/***************************************************/
+/***** Style pour la page 'Princesse Mononoke' *****/
+/***************************************************/
+.mononoke__main {
+    background-color: var(--couleur-mononoke);
+}
+
+.mononoke__intro {
+    --bg-img-ghibli: url(../ressources/images/mononoke/bg-mononoke.jpg);
+    --bg-color-ghibli: var(--couleur-mononoke);
+}
+
+
+/*****************************************************/
+/***** Style pour la page 'Le Voyage de Chihiro' *****/
+/*****************************************************/
+.chihiro__main {
+    background-color: var(--couleur-chihiro);
+}
+
+.chihiro__intro {
+    --bg-img-ghibli: url(../ressources/images/chihiro/bg-chihiro.jpg);
+    --bg-color-ghibli: var(--couleur-chihiro);
+}

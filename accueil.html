@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mathieu253" />
+
+    <!----- Favicon ----->
+    <link rel="icon" href="ressources/images/favicon.ico" type="image/x-icon">
+
+    <!----- Styles ----->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/accueil.css">
+
+    <!----- Titre ----->
+    <title>Studio Ghibli - Mederic Mathieu</title>
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <a class="navbar__logo-lien" href="accueil.html"><img class="navbar__logo-img" src="ressources/images/logo.png" alt="Logo du studio ghibli"></a>
+
+            <!-- Menu -->
+            <ul class="navbar__menu">
+                <li>
+                    <a class="navbar__menu-lien" href="pages/totoro.html">
+                        <span class="navbar__menu-titre">Mon voisin Totoro</span>
+                        <img class="navbar__menu-affiche" src="ressources/images/affiche-totoro.jpg" alt="Mon voisin Totoro">
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar__menu-lien" href="pages/lucioles.html">
+                        <span class="navbar__menu-titre">Le Tombeau des lucioles</span>
+                        <img class="navbar__menu-affiche" src="ressources/images/affiche-lucioles.jpg" alt="Le Tombeau des lucioles">
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar__menu-lien" href="pages/mononoke.html">
+                        <span class="navbar__menu-titre">Princesse Mononoké</span>
+                        <img class="navbar__menu-affiche" src="ressources/images/affiche-mononoke.jpg" alt="Princesse Mononoké">
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar__menu-lien" href="pages/chihiro.html">
+                        <span class="navbar__menu-titre">Le Voyage de Chihiro</span>
+                        <img class="navbar__menu-affiche" src="ressources/images/affiche-chihiro.jpg" alt="Le Voyage de Chihiro">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Background vidéo & texte d'introduction au Studio Ghibli -->
+        <section class="intro">
+            <video autoplay muted loop playsinline class="intro__background">
+                <source src="ressources/images/accueil/background.mp4" type="video/mp4">
+                Ton navigateur ne supporte pas la vidéo.
+            </video>
+            <div class="intro__paragraphe">
+                <h1>Le Studio Ghibli</h1>
+                <p>Le Studio Ghibli est un studio d'animation japonais fondé en 1985 par les réalisateurs <a href="https://www.imdb.com/fr-ca/name/nm0594503/?ref_=tt_ov_1_1" target="_blank">Hayao Miyazaki</a> et <a href="https://www.imdb.com/fr/name/nm0847223/" target="_blank">Isao Takahata</a>. Le studio s'est fait connaître notamment grâce aux films cultes 'Mon Voisin Totoro' ou encore 'Le Voyage de Chihiro'.<br>
+                    Leurs films abordent souvent des sujets comme l'aviation, l'indépendance, l'écologie ou encore le pacifisme, avec une touche de fantastique qui leur est propre, mêlant souvent le sentiment de nostalgie du passé et de crainte pour le futur. Ces thèmes forts en émotions sont la raison de leur succès, leur permettant de toucher n'importe quelle génération.</p>
+            </div>
+        </section>
+
+        <!-- Bannières des films présentés sur le site (Affiche + titre + synopsis) & lien redirigeant vers la page correspondante -->
+        <section>
+            <article class="films__banniere films__banniere--totoro">
+                <a class="films__lien" href="pages/totoro.html">
+                    <figure>
+                        <img class="films__affiche" src="ressources/images/affiche-totoro.jpg" alt="Affiche film 'Mon voisin Totoro'">
+                        <figcaption>Mon voisin Totoro</figcaption>
+                    </figure>
+                </a>
+                <p class="films__synopsis">Lorsque deux jeunes filles déménagent à la campagne pour être près de leur mère souffrante, elles vivent des aventures avec les merveilleux esprits de la forêt.</p>
+            </article>
+
+            <article class="films__banniere films__banniere--lucioles">
+                <a class="films__lien" href="pages/lucioles.html">
+                    <figure>
+                        <img class="films__affiche" src="ressources/images/affiche-lucioles.jpg" alt="Affiche film 'Le Tombeau des lucioles'">
+                        <figcaption>Le Tombeau des lucioles</figcaption>
+                    </figure>
+                </a>
+                <p class="films__synopsis">Un jeune garçon et sa petite soeur luttent pour survivre au Japon pendant la Seconde Guerre mondiale.</p>
+            </article>
+
+            <article class="films__banniere films__banniere--mononoke">
+                <a class="films__lien" href="pages/mononoke.html">
+                    <figure>
+                        <img class="films__affiche" src="ressources/images/affiche-mononoke.jpg" alt="Affiche film 'Princesse Mononoké'">
+                        <figcaption>Princesse Mononoké</figcaption>
+                    </figure>
+                </a>
+                <p class="films__synopsis">En quête d'un remède contre la malédiction d'un Tatarigami, Ashitaka se retrouve plongé au coeur d'une guerre entre les dieux de la forêt et Tatara, une colonie minière. Dans cette quête, il fait la rencontre de San, la princesse Mononoke.</p>
+            </article>
+
+            <article class="films__banniere films__banniere--chihiro">
+                <a class="films__lien" href="pages/chihiro.html">
+                    <figure>
+                        <img class="films__affiche" src="ressources/images/affiche-chihiro.jpg" alt="Affiche film 'Le Voyage de Chihiro'">
+                        <figcaption>Le Voyage de Chihiro</figcaption>
+                    </figure>
+                </a>
+                <p class="films__synopsis">Lorsque sa famille déménage en banlieue, une fillette de dix ans renfrognée découvre un monde régi par des dieux, des sorcières et des esprits où les humains sont transformés en animaux.</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <section>
+            <h3>Sources :</h3>
+            <ul class="footer__menu">
+                <li>Informations Studio Ghibli <a href="https://fr.wikipedia.org/wiki/Studio_Ghibli" target="_blank">(Wikipedia)</a></li>
+                <li>Images & illustrations diverses <a href="https://fr.pinterest.com" target="_blank">(Pinterest)</a></li>
+                <li>Informations films & illustrations & images galerie <a href="https://www.themoviedb.org/?language=fr" target="_blank">(TMDB)</a> & <a href="https://www.imdb.com/fr/" target="_blank">(IMDB)</a></li>
+                <li>Polices Ghibli <a href="https://font.download/font/ghibli" target="_blank">(Font download)</a></li>
+                <li>Inspirations web design <a href="https://fr.pinterest.com/pin/593208582208327746/" target="_blank">(1)</a> - <a href="https://fr.pinterest.com/pin/292100725852922092/" target="_blank">(2)</a> - <a href="https://fr.pinterest.com/pin/20618110789596343/" target="_blank">(3)</a></li>
+                
+            </ul>
+        </section>
+
+        <hr class="footer__separateur">
+
+        <address>
+            © 2025 - <strong>Médéric MATHIEU</strong> (mathieu253)<br>
+            Numéro étudiant: <strong>22502513</strong><br>
+            Groupe 3B
+        </address>
+    </footer>
+</body>
+
+</html>
